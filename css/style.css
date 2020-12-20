@@ -1,0 +1,119 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+:root {
+    font-size: 17px;
+    text-align: justify;
+    --bckColor1: rgb(39, 55, 100);
+    --bckColor2:  rgb(84, 88, 99);
+    --sepLines: rgb(100, 74, 74);
+    --fontColor: white;
+}
+header {
+    height: 50vh;
+    width: 100%;
+    background-image: url(/img/land.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+body {
+    font-family: 'Jura', sans-serif;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+li a:hover {
+    font-size: 1.05em;
+    background-color: rgba(138, 140, 148, 0.534);
+    cursor: poiter;
+}
+nav {
+    height: 75px;
+    width: 100%;
+    background-color:var(--bckColor1);
+    color: white;
+    position: fixed;
+    z-index: 0;
+    border-bottom: 1px solid var(--sepLines) ;
+}
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+ul {
+    height: 100%;
+    list-style: none;
+    font-size: 1.25em;
+}
+li {
+    max-width: 150px;
+    padding: 20px;
+    text-align: center;
+}
+.sepLine {
+    height: 50%;
+    border-left: 0.05em solid var(--sepLines);
+}
+.container {
+    display: block;
+}
+.services {
+    height: 50vh;
+    width: 100%;
+    background-color: var(--bckColor1);
+    color: var(--fontColor);
+}
+.skills {
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    background-color: var(--bckColor2);
+    color: var(--fontColor);
+}
+.bio {
+    height: 50vh;
+    width: 100%;
+    background-color: var(--bckColor1);
+    color: var(--fontColor);
+}
+.contact {
+    height: 50vh;
+    width: 100%;
+    background-color: var(--bckColor2);
+    color: var(--fontColor);
+}
+footer {
+    background-color: black;
+    color: var(--fontColor);
+    text-align: center;
+}
+.skillContainer {
+    display: grid;
+    position: relative;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 'current', 'development';
+}
+.img1 {
+    width: 50%;
+    grid-area: development;
+    object-fit: cover;
+    
+}
+.img2 {
+    width: 35%;
+    grid-area: development;
+}
+.img3 {
+    width: 35%;
+    grid-area: development;
+}

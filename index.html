@@ -2,17 +2,79 @@
 <html lang="pl">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>CodersCamp | Projekt 1 - HTML i CSS</title>
     <meta name="description" content="CodersCamp to darmowy, otwarty kurs programowania webowego we Wrocławiu. Sprawdź, czego nauczysz się na CodersCamp i spróbuj swoich sił w branży IT!">
+    <meta http-equiv="X-UA Compatible" content="IE=edge,chrome=1"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/fontello.css" type="text/css"/>
 
 </head>
-
 <body>
-
-<p>CodersCamp - projekt 1. Tutaj możesz zacząć swoją zabawę!</p>
-<p>TEST commit</p>
+<header>
+    <nav>
+        <ul class = "menu">
+            <li>
+                <a href = "#services">SERVICES</a>
+            </li>
+            <div class = "sepLine"></div>
+            <li>
+                <a href = "#skills">SKILLS</a>
+            </li>
+            <div class = "sepLine"></div>
+            <li>
+                <a href = "#bio">BIO</a>
+            </li>
+            <div class = "sepLine"></div>
+            <li>
+                <a href = "#contact">CONTACT</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+    <container class="container">
+        <div class = "services">
+            <h1>The web that suits You!</h1>
+            <p>Hello! My name is Konrad and I am a front-end developer. </p>
+        </div>
+        <div class = "skills">
+            <h1>Skills</h1>
+            <div class="skillContainer">
+                <div class = "skilCurrent">
+                    <img class ="img1" src="img/html5-logo-31816.png" alt="html5, css3, js logo">
+                </div>
+                <div class = "skilFuture">
+                    <img class ="img2" src="img/node-js.png" alt ="node.js logo"><br>
+                    <img class ="img3" src="img/react_logo.png" alt="react logo">
+                </div>
+            </div>
+        </div>
+        <div class = "bio">
+            <h1>About me</h1>
+            <div class = "aboutPar">
+                <p>In 2017 I graduated Mechatronics at University od Rzeszów with MSc degree. Since then I work at University as research assistant. I am sharing my free time playing guitar, street workout and Urbex. </p>
+            </div>
+            <div class = "links">
+                <h2>Check out my works and publications!</h2>
+                <a href = "https://github.com/KonradMierzejewski" target="_blank" title="Checkout my GitHub"><i class="icon-github-circled"></i></a>
+                <a href = "https://orcid.org/0000-0002-9881-1447" target ="_blank" title="Check out my publications"><i class="icon-doc"></i></a>
+                <a href = "https://www.facebook.com/konrad.mierzejewski.1/" target ="_blank" title="Checkout my Facebook"><i class="icon-facebook-squared"></i></a>
+            </div>
+        </div>
+        <div class = "contact">
+            <h1>Contact</h1>
+            <p>If you have any questions, use the form below. I will answer as soon as possible.</p>
+            <form action="">
+                <input type="text" name="name" placeholder="Name"><br>
+                <input type="email" name="email" placeholder="Email"><br>
+                <input type="textfield" name="message" placeholder="Message">
+                <input type="submit" value="Send" class="send-button">
+            </form>
+        </div>
+    </container>
+    <footer>
+        © 2020 All rights reserved <br> Powered by RedHelena
+    </footer>
 </body>
 </html>
