@@ -15,7 +15,7 @@
 <header>
     <nav>
         <ul class = "menu">
-            <li>
+            <li >
                 <a href = "#services">SERVICES</a>
             </li>
             <div class = "sepLine"></div>
@@ -35,41 +35,45 @@
 </header>
     <container class="container">
         <div class = "services">
-            <h1>The web that suits You!</h1>
-            <p>Hello! My name is Konrad and I am a front-end developer. </p>
+            <h1>The web that suits You!</h1><br>
+            <div class="serviceCont">
+                <div class="intro">
+                    <p>Hello! My name is Konrad and I am a front-end developer at the begining of my adventure called Web Developing. In here, you can chek out my achievements so far. Stay tuned for upcoming projects.</p>
+                </div>
+                <div class="myPic"><img src="img/me.jpg" class="myPic"></div>
+            </div> 
         </div>
         <div class = "skills">
-            <h1>Skills</h1>
-            <div class="skillContainer">
-                <div class = "skilCurrent">
-                    <img class ="img1" src="img/html5-logo-31816.png" alt="html5, css3, js logo">
-                </div>
-                <div class = "skilFuture">
-                    <img class ="img2" src="img/node-js.png" alt ="node.js logo"><br>
-                    <img class ="img3" src="img/react_logo.png" alt="react logo">
-                </div>
+            <h1>Technical skills</h1>
+            <div class="skillBox">
+                <img src="img/tech1.png">
             </div>
         </div>
         <div class = "bio">
             <h1>About me</h1>
             <div class = "aboutPar">
-                <p>In 2017 I graduated Mechatronics at University od Rzeszów with MSc degree. Since then I work at University as research assistant. I am sharing my free time playing guitar, street workout and Urbex. </p>
+                <br><p>In 2017 I graduated Mechatronics at University od Rzeszów with MSc degree. Since then I work at University as research assistant. My academic activity is mainly focused on Active Vibration Control of construction plates. However I am truly dedicated to programming and embedded systems, especially FPGA. Recently I started Web Development bootcamp, and that is the reason for creating this page. I am sharing my free time playing guitar, street workout and Urbex.
+                </p>
             </div>
-            <div class = "links">
-                <h2>Check out my works and publications!</h2>
-                <a href = "https://github.com/KonradMierzejewski" target="_blank" title="Checkout my GitHub"><i class="icon-github-circled"></i></a>
-                <a href = "https://orcid.org/0000-0002-9881-1447" target ="_blank" title="Check out my publications"><i class="icon-doc"></i></a>
-                <a href = "https://www.facebook.com/konrad.mierzejewski.1/" target ="_blank" title="Checkout my Facebook"><i class="icon-facebook-squared"></i></a>
-            </div>
+            <br><br>
+            <h2>Check out my works and publications!</h2>
+                <div class = "links">
+                    <a href = "https://github.com/KonradMierzejewski" target="_blank" title="Checkout my GitHub"><i class="icon-github-circled"></i></a>
+                    <a href = "https://orcid.org/0000-0002-9881-1447" target ="_blank" title="Check out my publications"><i class="icon-doc"></i></a>
+                    <a href = "https://www.facebook.com/konrad.mierzejewski.1/" target ="_blank" title="Checkout my Facebook"><i class="icon-facebook-squared"></i></a>
+                </div>
         </div>
         <div class = "contact">
             <h1>Contact</h1>
-            <p>If you have any questions, use the form below. I will answer as soon as possible.</p>
+            <h3>If you have any questions, use the form below. I will answer as soon as possible.</h3><br>
             <form action="">
-                <input type="text" name="name" placeholder="Name"><br>
-                <input type="email" name="email" placeholder="Email"><br>
-                <input type="textfield" name="message" placeholder="Message">
-                <input type="submit" value="Send" class="send-button">
+                <label for="fname">Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="lname">Subject</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Subject..">
+                <label for="subject">Message</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <input type="submit" value="Submit">
             </form>
         </div>
     </container>
