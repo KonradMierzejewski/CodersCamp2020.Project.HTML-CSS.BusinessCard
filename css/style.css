@@ -1,10 +1,11 @@
 * {
     padding: 0px;
     margin: 0px;
+    scroll-behavior: smooth;
 }
 
 :root {
-    font-size: 17px;
+    font-size: 14px;
     text-align: justify;
     --bckColor1: rgb(39, 55, 100);
     --bckColor2:  rgb(84, 88, 99);
@@ -15,7 +16,7 @@
 header {
     height: 50vh;
     width: 100%;
-    background-image: url(/img/land.jpg);
+    background-image: url(../img/land.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -31,12 +32,13 @@ body {
 a {
     text-decoration: none;
     color: white;
+    transition: 0.3s;
 }
 
 li a:hover {
     font-size: 1.05em;
-    background-color: rgba(138, 140, 148, 0.534);
     cursor: pointer;
+    transform: scale(1.6);
 }
 
 nav {
@@ -81,20 +83,24 @@ h1 {
 h2 {
     font-size: 2.5em;
     text-align: center;
+    padding: 15px;
 }
 
 h3 {
     font-size: 1.5em;
     text-align: center;
+    padding: 15px;
 }
 .services p {
-    padding-top: 50px;
+    padding: 50px;
+    margin-top: 50px;
     text-align: center;
     font-size: 1.5em;
+
 }
 
 .services {
-    height: 50vh;
+    position: relative;
     width: 100%;
     background-color: var(--bckColor1);
     color: var(--fontColor);
@@ -108,15 +114,15 @@ h3 {
     width: 80%;
     height: auto;
     margin: 0 auto;
+    padding: 15px;
 }
 
 .myPic {
-    border-radius: 15%;
+    border-radius: 5%;
 }
 
 .skills {
     position: relative;
-    height: 65vh;
     width: 100%;
     background-color: var(--bckColor2);
     color: var(--fontColor);
@@ -128,46 +134,73 @@ h3 {
     text-align: center;
     background-size: cover;
     object-fit: contain;
+    padding: 15px;
+    margin: 10px;
 }
 
 .bio {
     position: relative;
-    height: 50vh;
     width: 100%;
     background-color: var(--bckColor1);
     color: var(--fontColor);
     padding-top: 20px;
 }
 
+.aboutPar {
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+}
+
 .bio p {
     text-justify: justify;
-    padding: 25px;
+    padding: 15px;
+    margin-bottom: 30px;
     font-size: 1.5em;
     text-align: center;
     vertical-align: middle;
 }
 .links {
     position: absolute;
+    padding: 10px;
+    margin-top: 40px;
     bottom: 10%;
     left: 50%;
     transform: translate(-50%);
 }
 
+.icon-github-circled:hover:before {
+    transform: scale(1.5);
+    color: black;
+}
+
+.icon-doc:hover:before {
+    transform: scale(1.5);
+    color: rgb(166,206,57)
+}
+
+.icon-facebook-squared:hover:before {
+    transform: scale(1.5);
+    color: rgb(66, 103, 178);
+}
+
 .contact {
-    height: 65vh;
     width: 100%;
     background-color: var(--bckColor2);
     color: var(--fontColor);
     text-align: center;
+    padding-bottom: 20px;
 }
 
 footer {
     display: grid;
-    grid-template-columns: 98% 2%;
+    grid-template-columns: 95% 5%;
     grid-template-areas: "stopka anim";
     background-color: black;
     color: var(--fontColor);
     text-align: center;
+    padding: 5px;
 }
 .stopka {
     text-align: right;
@@ -179,6 +212,7 @@ footer {
     text-align: center;
     width: 20px;
     height: 20px;
+    margin-left: 5px;
     position: relative;
     animation-name: blinkAnim;
     animation-duration: 5s;
@@ -215,6 +249,10 @@ input[type=text], select, textarea {
     box-sizing: border-box; 
     margin-top: 6px; 
     margin-bottom: 16px; 
+  }
+
+  textarea {
+      resize: none;
   }
   
   input[type=submit] {
