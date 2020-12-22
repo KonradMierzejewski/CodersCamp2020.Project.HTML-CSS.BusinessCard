@@ -1,5 +1,4 @@
 # Konrad Mierzejewski - Business Card
----
 
 ## Table of contents
 * [Basic Information](#basic-information)
