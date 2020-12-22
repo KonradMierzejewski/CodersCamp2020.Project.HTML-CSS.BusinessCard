@@ -5,10 +5,11 @@
 * [Technologies](#technologies)
 * [Status](#status)
 * [License](#license)
+* [Author](#author)
 
 ## Basic information
 Buisness Card website was developed as first project of Coders Cap bootcamp.
-You can see it by clicking [here.](https://github.com/KonradMierzejewski)
+You can see it by clicking [here.](https://konradmierzejewski.github.io/CodersCamp2020.Project.HTML-CSS.BusinessCard/)
 
 ## Technologies
 * HTML5
@@ -19,3 +20,6 @@ Currently, this is early beta version of that webpage. Plans for future provide 
 
 ## License
 Project was distributed under the MIT License.
+
+## Author
+Website was designed by [Korad Mierzejewski.](https://github.com/KonradMierzejewski)
